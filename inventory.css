@@ -1,0 +1,60 @@
+/* Estilos para os itens do inventário */
+.inventory {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.inventory ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.inventory li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pokemon-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pokemon-details img {
+  width: 150px;
+  height: auto;
+}
+
+/* Estilos para o botão Voltar */
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+
+.btn-back {
+  padding: 5px 10px; /* Diminuir o padding */
+  font-size: 14px; /* Diminuir o tamanho da fonte */
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-back:hover {
+  background-color: #cc0000;
+}
+
+/* Estilos específicos para a lista de botões */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+#mostrar {
+  padding-left: 20%;
+}

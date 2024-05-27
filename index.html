@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links -->
+  <link rel="icon" href="pokeball.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Main JS -->
+  <script defer src="script.js"></script>
+
+  <title>Pokédex</title>
+
+  <style>
+    /* Estilos adicionais para o botão de voltar */
+    .btn-back-to-login {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      padding: 10px 20px;
+      background-color: #ff4500;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  
+  <main>
+    <img src="#" alt="pokemon" class="pokemon__image">
+
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span> -
+      <span class="pokemon__name"></span>
+    </h1>
+
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Name or Number"
+        required
+      />
+    </form>
+
+    <div class="buttons">
+      <button class="button btn-prev">Prev &lt;</button>
+      <button class="button btn-next">Next &gt;</button>
+      <button class="button btn-add-to-bag">Adicionar à Mochila</button>
+      <a href="inventory.html" class="button btn-bag">Mochila</a>
+    </div>
+
+    <img src="pokedex.png" alt="pokedex" class="pokedex">
+
+    <!-- Botão para voltar para a página de login -->
+    <button class="btn-back-to-login" onclick="window.location.href = 'signin.html';">Voltar para Login</button>
+  </main>
+
+</body>
+</html>
